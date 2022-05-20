@@ -1,4 +1,18 @@
-* {
-  left: 0;
-  right: 0;
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.title {
+    margin-left: 10rem;
+}
+
+.form-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    
 }
