@@ -21,3 +21,8 @@
 .scores-list {
     border: 1px solid black;
 }
+
+#name {
+    width: 200px;
+    color: black;
+}
