@@ -25,4 +25,12 @@
 #name {
     width: 200px;
     color: black;
+    margin-bottom: 12px;
+}
+
+.submit {
+margin-top: 12px;
+    width: 80px;
+    text-align: center;
+    margin-left: 8rem;
 }
