@@ -36,6 +36,14 @@ margin-top: 12px;
     margin-left: 8rem;
 }
 
-.rscore {
+.r-score {
     display: inline-flex;
+    gap: 4rem;
+    height: 80px;
+}
+
+.refresh {
+    width: 80px;
+    height: 30px;
+margin-top: 10px;
 }
