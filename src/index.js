@@ -5,12 +5,12 @@ const gameContainer = document.getElementById('form');
 const newScoreler = document.getElementById('name');
 const scores = document.getElementById('score')
 const listContainer = document.querySelector('.scores-list')
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Cvjvaty8v75lgFTlmVzh/scores/';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/wjNT9YZy9tnBRUGMBOdW/scores';
 const renderScore = (gameUsers) => {
     const gamers = (gameUsers.result);
     let list = '';
     gamers.forEach((gameUser) => {
-      list += `<span>${gameUser.user} : ${gameUser.score}</span>`;
+      list += `<li>${gameUser.user} : ${gameUser.score}</li>`;
       listContainer.innerHTML = list;
     });
   };
