@@ -4,7 +4,7 @@ const refresh = document.querySelector('.refresh');
 const gameContainer = document.getElementById('form');
 const newScoreler = document.getElementById('name');
 const scores = document.getElementById('score')
-const listContainer = document.querySelector('.scores-list')
+// const listContainer = document.querySelector('.scores-list')
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/'
 
 const renderScore = (gameUsers) => {
@@ -42,4 +42,9 @@ const getScores = async () => {
     scores.value = '';
     return data;
   };
+
+  gameContainer.addEventListener('submit', (e) => {
+    e.preventDefault();
+    addScoreForm();
+  });
   
