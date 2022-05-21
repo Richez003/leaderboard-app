@@ -14,13 +14,11 @@ const renderScore = (gameUsers) => {
     listContainer.innerHTML = list;
   });
 };
-
 const getScores = async () => {
   const res = await fetch(url);
   const data = await res.json();
   renderScore(data);
 };
-
 refresh.addEventListener('click', () => {
   getScores();
 });
@@ -41,7 +39,6 @@ const addScoreForm = async () => {
   scores.value = '';
   return data;
 };
-
 gameContainer.addEventListener('submit', (e) => {
   e.preventDefault();
   addScoreForm();
