@@ -1,6 +1,6 @@
 import './style.css';
 
-const refreh = document.querySelector('.refresh');
+const refresh = document.querySelector('.refresh');
 const gameContainer = document.getElementById('form');
 const newGame = document.getElementById('name');
 const scores = document.getElementById('score')
@@ -15,4 +15,14 @@ const renderScore = (gameUsers) => {
       scoreDiv.innerHTML = list;
     });
   };
+  
+const getScores = async () => {
+    const res = await fetch(url);
+    const data = await res.json();
+    renderScore(data);
+  }
+
+  refresh.addEventListener('click', () => {
+    getScores();
+  });
   
