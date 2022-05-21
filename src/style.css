@@ -11,7 +11,7 @@ body {
 .title {
   margin-top: 4rem;
   font-family: 'Cocogoose', sans-serif;
-
+text-align: center;
   margin-bottom: 2rem;
   font-size: 52px;
 
@@ -20,8 +20,6 @@ body {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 10rem;
-
 }
 
 .main-container {
@@ -33,6 +31,13 @@ body {
 .form-cont {
   display: flex;
   flex-direction: column;
+  margin-right: 10rem;
+}
+
+input {
+  height: 30px;
+  padding-left: 12px;
+  border-radius: 7px;
 }
 
 #form {
@@ -41,8 +46,12 @@ body {
 }
 
 .scores-list {
-  border: 1px solid black;
+  border: 1px solid rgb(41, 38, 38);
   width: 200px;
+  gap: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: 'lato', sans-serif;
 }
 
 #name {
@@ -56,6 +65,12 @@ body {
   width: 80px;
   text-align: center;
   margin-left: 8rem;
+  border-radius: 7px;
+  background-color: #fff;
+  color: rgb(156, 16, 16);
+  height: 35px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .r-score {
@@ -67,10 +82,32 @@ body {
 .refresh {
   width: 80px;
   height: 30px;
-  margin-top: 10px;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgb(72, 61, 131);
 }
 
 .a-score {
+  font-size: 24px;
+  color: rgb(97, 46, 46);
+  font-family: 'poppins', sans-serif;
+}
+
+li {
+  background-color: rgb(185, 175, 175);
+  padding-left: 14px;
+  padding-top: 8px;
+  font-weight: bold;
+  
+}
+
+.score-cont {
+  margin-left: 10rem;
+
+}
+
+.recent {
   font-size: 24px;
   color: rgb(97, 46, 46);
   font-family: 'poppins', sans-serif;
