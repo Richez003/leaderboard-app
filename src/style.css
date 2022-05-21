@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  background-color: rgb(199, 195, 195);
+}
+
 .title {
   margin-top: 4rem;
   font-family: 'Cocogoose', sans-serif;
@@ -16,7 +20,7 @@
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* -webkit-font-smoothing: antialiased; */
+  margin-left: 10rem;
 
 }
 
@@ -24,10 +28,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.title {
-  margin-left: 10rem;
 }
 
 .form-cont {
@@ -68,4 +68,10 @@
   width: 80px;
   height: 30px;
   margin-top: 10px;
+}
+
+.a-score {
+  font-size: 24px;
+  color: rgb(97, 46, 46);
+  font-family: 'poppins', sans-serif;
 }
