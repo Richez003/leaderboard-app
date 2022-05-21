@@ -1,3 +1,25 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  margin-top: 4rem;
+  font-family: 'Cocogoose', sans-serif;
+
+  margin-bottom: 2rem;
+  font-size: 52px;
+
+  background-image: linear-gradient(rgba(255, 38, 0, 0.76), rgba(255, 51, 0, 0.575)), url(./photos/tech.webp);
+  background-repeat: repeat;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-font-smoothing: antialiased; */
+
+}
+
 .main-container {
   display: flex;
   flex-direction: row;
