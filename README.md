@@ -1,10 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard: setup project
+# Leaderboard: final touches
+
 
 
 ![Screenshot](./src/photos/Screenshot.png)
 
+![Screenshot](./src/photos/Screenshot-1.png)
 > Everything you need to start using webpack is all setup and ready to use just run the following commands to get started:
 
 Get started by copying and pasting the following in your terminal: 
