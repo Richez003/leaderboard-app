@@ -1,6 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# WEBPACK 5 TEMPLATE
+# Leaderboard: setup project
+
+
+![Screenshot](./src/photos/Screenshot.png)
 
 > Everything you need to start using webpack is all setup and ready to use just run the following commands to get started:
 

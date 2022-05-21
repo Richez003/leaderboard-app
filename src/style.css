@@ -1,0 +1,49 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.title {
+  margin-left: 10rem;
+}
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.scores-list {
+  border: 1px solid black;
+  width: 200px;
+}
+
+#name {
+  width: 200px;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.submit {
+  margin-top: 12px;
+  width: 80px;
+  text-align: center;
+  margin-left: 8rem;
+}
+
+.r-score {
+  display: inline-flex;
+  gap: 4rem;
+  height: 80px;
+}
+
+.refresh {
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+}

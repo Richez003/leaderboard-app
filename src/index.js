@@ -1,13 +1,48 @@
-import _ from 'lodash';
+import './style.css';
 
-function component() {
-  const element = document.createElement('div');
+const refresh = document.querySelector('.refresh');
+const gameContainer = document.getElementById('form');
+const newScoreler = document.getElementById('name');
+const scores = document.getElementById('score');
+const listContainer = document.querySelector('.scores-list');
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/wjNT9YZy9tnBRUGMBOdW/scores';
+const renderScore = (gameUsers) => {
+  const gamers = (gameUsers.result);
+  let list = '';
+  gamers.forEach((gameUser) => {
+    list += `<li>${gameUser.user} : ${gameUser.score}</li>`;
+    listContainer.innerHTML = list;
+  });
+};
 
-  // Lodash, currently included via a script, is required for this line to work
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+const getScores = async () => {
+  const res = await fetch(url);
+  const data = await res.json();
+  renderScore(data);
+};
 
-  return element;
-}
+refresh.addEventListener('click', () => {
+  getScores();
+});
 
-document.body.appendChild(component());
+const addScoreForm = async () => {
+  const res = fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      user: newScoreler.value,
+      score: scores.value,
+    }),
+  });
+  const data = await (await res).json();
+  newScoreler.value = '';
+  scores.value = '';
+  return data;
+};
+
+gameContainer.addEventListener('submit', (e) => {
+  e.preventDefault();
+  addScoreForm();
+});
