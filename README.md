@@ -13,12 +13,12 @@ Get started by copying and pasting the following in your terminal:
 
 - 1 
 ```
-git@github.com:Kayonga99/Webpack.git
+git@github.com:Kayonga99/leaderboard-app.git
 ```
 - 2
 
 ```
-cd webpack
+cd leaderboard-app
 ```
 
 - 3
@@ -46,6 +46,23 @@ http://localhost:3000
 
 
 - 6
+
+## Live demo 
+
+[Click here to see web](https://effervescent-strudel-50d587.netlify.app)
+
+## Buit with
+- Javascript
+- Webpack
+- CSS
+
+## Author
+ 
+ 👤 **Kayonga Chiteta**
+
+- GitHub: [@Kayonga99](https://github.com/Kayonga99)
+- Twitter: [@KayongaChiteta3](https://twitter.com/KayongaChiteta3?t=gfILCjmltzGRZOx6FZ8-nQ&s=08)
+- LinkedIn: [Kkayonga Chiteta](https://www.linkedin.com/in/kayonga-chiteta-776949227)
 
  You can start editing the files in the "src" folder
 
